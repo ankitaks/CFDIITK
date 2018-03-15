@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Project</title>
+   <link  type="text/css" rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}"/>	
+   <script>
+     var msg="Some Message"
+   </script>		
+</head>
+<body>
+
+<div class="form-style-6">
+    <h1>Movie Review</h1>
+    <form method="POST">
+        <input type="name" name="movie" placeholder="Movie Name" />
+        <textarea disabled name="field3" placeholder="{{ msg }}"></textarea>
+        <input type="submit" value="Send" />
+    </form>
+</div>
+</body>
+</html>
